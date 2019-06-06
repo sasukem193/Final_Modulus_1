@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <h2>Task 1</h2>
+    <script>
+
+        function findMinScore(array) {
+            let min = array[0];
+            for (let number = 1; number < array.length; number++) {
+                if (min > array[number]) {
+                    min = array[number];
+                }
+            }
+            return min;
+        }
+        let myArray = [10, 5, 2, 8, -1, 6, 8];
+        let minScore= findMinScore(myArray);
+        document.write("Danh sách điểm là: " + myArray+ "<br>");
+        document.write("Điểm số thấp nhất trong danh sách là: "+ minScore);
+    </script>
+</body>
+
+</html>
